@@ -1,7 +1,7 @@
 
-const s='XVII';
+const s='MCDXVI';
 function romanToInt(s) {
-    const map ={
+    const roman ={
         'I': 1,
         'V': 5,
         'X': 10,
@@ -12,10 +12,10 @@ function romanToInt(s) {
     };
     let result = 0;
     s.split('').forEach((num, i) => {
-        if (map[num] < map[s[i + 1]])
-            result -= map[num];
+        if (roman[num] < roman[s[i + 1]])
+            result -= roman[num];
         else
-            result += map[num];
+            result += roman[num];
     });
     return result;
 
