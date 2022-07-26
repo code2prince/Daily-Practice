@@ -1,0 +1,19 @@
+const price=[2,5,1,2,3,4,5];
+function maxProfit(price){
+    let buy=price[0];
+    price[0]=0;
+    let profit=0;
+
+    for(let i=1; i<price.length; i++){
+        if(buy>price[i]){
+            buy=price[i];
+            price[i]=0;
+        }
+        else{
+            profit=Math.max(price[i]-buy,profit);
+        }
+    }
+    console.log(profit);
+}
+maxProfit(price);
+
