@@ -15,6 +15,7 @@ function minMaxElement(){
     }
     console.log(array);
     console.log("min element:",array[0]);
-    console.log("max element:", array[array.indexOf(444)]);
+    // console.log("max element:", array[array.indexOf(444)]);
+    console.log("maximum",array[array.length-1] );
 }
 minMaxElement();
