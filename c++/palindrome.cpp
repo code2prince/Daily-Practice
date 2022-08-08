@@ -20,6 +20,15 @@ int main(){
     return 0;
 }
 
+// output
+
+// Enter the no:121
+// reverse:121
+// palindrome
+
+// Enter the no:123
+// reverse:321
+// not palindrome
 
 
 
