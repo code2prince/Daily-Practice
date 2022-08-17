@@ -26,6 +26,7 @@ int main(){
     cout<<"length of longest valid parenthesis:"<<findMaxLength(str)<<endl;
     return 0;
 }
+/// output
 
- // length of longest valid parenthesis: 4               
+ // length of longest valid parenthesis: 6               
             
