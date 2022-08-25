@@ -47,3 +47,12 @@ int main() {
    cout<<"total bill:"<< total;
     return 0;
 }
+
+
+// Enter no of pizza:10
+// no of puff:12
+// no of cold drink:5
+// total pizza price:1000
+// total puff price:240
+// total cold Drink price:50
+// total bill:1290
