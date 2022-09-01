@@ -1,8 +1,12 @@
+// frequency of  char in string 
+
 #include<iostream>
 using namespace std;
 int main(){
     string str= "I am Prince Kumar Sharma";
-    
+
+       // user input
+
     // string str;
     // cout<<"enter string:";
     // cin>>str;
