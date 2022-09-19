@@ -1,19 +1,21 @@
-#include<iostream>
-using namespace std;
-int main(){
-    int row;
-    cout<<"Enter row:";
-    cin>>row;
+// reverse triangular pattern
 
-    for(int  i=row; i>=1; i-- ){
-        for(int j=1; j<=i; j++){
-            cout<<j;
-        }
-        cout<<"\n";
+// #include<iostream>
+// using namespace std;
+// int main(){
+//     int row;
+//     cout<<"Enter row:";
+//     cin>>row;
 
-    }
-    return 0;
-}
+//     for(int  i=row; i>=1; i-- ){
+//         for(int j=1; j<=i; j++){
+//             cout<<j;
+//         }
+//         cout<<"\n";
+
+//     }
+//     return 0;
+// }
 
 
 // Enter row:5
@@ -23,3 +25,31 @@ int main(){
 // 12
 // 1
 
+
+
+
+#include<iostream>
+using namespace std;
+int main(){
+    int n;
+    cout<<"Enter the value of n:";
+    cin>>n;
+
+    for(int i=n; i>=1; i--){
+        for(int j=1; j<=i; j++){
+            cout<<"*";
+        }
+        cout<<"\n";
+    }
+    return 0;
+}
+
+
+
+// Enter the value of n:6
+// ******
+// *****
+// ****
+// ***
+// **
+// *
