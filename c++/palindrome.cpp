@@ -31,4 +31,23 @@ int main(){
 // not palindrome
 
 
+//  check a string is palindrome or not 
 
+// #include<iostream>
+// using namespace std;
+// int main(){
+//     string str="aba";
+//     string rev="";
+//     for(int i=str.length()-1; i>=0; i--){
+//         rev=rev+str[i];
+//     }
+//     cout<<rev<<endl;
+    
+//     if(str==rev){
+//         cout<<"palindrome";
+//     }
+//     else{
+//         cout<<"not";
+//     }
+//     return 0;
+// }
