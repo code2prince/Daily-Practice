@@ -1,3 +1,5 @@
+// palindrome no
+
 #include<iostream>
 using namespace std;
 int main(){
@@ -49,5 +51,40 @@ int main(){
 //     else{
 //         cout<<"not";
 //     }
+//     return 0;
+// }
+
+
+
+//// palindrom array 
+
+
+// #include <iostream>
+// using namespace std;
+
+// int p(int arr[], int n){
+//     int flag=0;
+//     for(int i=0; i<=n/2 && n!=0; i++){
+//         if(arr[i]!= arr[n-i-1]){
+//         flag=1;
+//         break;
+//         }
+        
+//     }
+
+//     if(flag==1){
+//         cout<<"not palindrome";
+//     }else{
+//         cout<<"palindrome";
+//     }
+    
+// }
+// int main() {
+//      int arr[] = { 1, 2, 3, 2, 1 };
+//     //int n=sizeof(arr)/sizeof(arr[0]);
+//     int n=5;
+    
+//     p(arr, n);
+
 //     return 0;
 // }
