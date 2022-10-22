@@ -1,10 +1,11 @@
+// insert at head
+
 #include<iostream>
 using namespace std;
 
 class node{
     public:
-    //insert AT Head
-    
+              //insert AT Head
     int data;
     node* next;
 
