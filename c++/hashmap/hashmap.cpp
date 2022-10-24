@@ -6,7 +6,9 @@
 using namespace std;
 int main() {
     // creation ............
-   unordered_map<string,int> m;
+
+    unordered_map<string,int>m;
+   //map<string,int> m;
    
    // insertion...............
    //method 1
@@ -46,6 +48,31 @@ int main() {
 //   cout<<m.size()<<endl; // 3 now size 3 prince is deleted
    
    
+//iterator
+unordered_map<string, int> :: iterator it= m.begin();
+while(it != m.end()){
+    cout<<it->first <<" "<< it->second<<endl; 
+    it++;
+}
+ // into unordered map print randomly here complexity >> O(1);
+     //unknownKey 0 
+    // hello 5
+    // prince 3
+    // sharma 2
+
+// map<string, int> :: iterator it= m.begin();
+// while(it !=m.end()){
+//     cout<<it->first <<" "<<it->second<< endl;
+//     it++;
+// }
+
+//not it will print into ordered but here into map timeComplexity >>>log(N)
+// hello 5
+// prince 3
+// sharma 2
+// unknownKey 0
+
+
 
     return 0;
 }
