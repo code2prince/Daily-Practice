@@ -25,3 +25,22 @@ int main(){
 
 //frequency of 4 is :3
 
+
+
+   //without recursion
+
+// #include <iostream>
+// using namespace std;
+// int main() {
+//     int n=1234444343;
+//     int k=4,c=0;
+//     while(n>0){
+//         if(n%10==k){
+//             c++;
+//         }
+//         n=n/10;
+//     }
+//     cout<<c;
+
+//     return 0;
+// }
