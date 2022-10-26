@@ -23,3 +23,24 @@ int main(){
 }
 
 // Frequency of character m into string :3
+
+// // recursion 
+// #include <iostream>
+// using namespace std;
+// int freq(string str, char k){
+//     int count=0;
+//     for(int i=0; i<str.length(); i++){
+//         if(str[i]==k){
+//             count++;
+//         }
+//     }
+//     return count;
+// }
+// int main() {
+//    string str="prince sharma";
+//    char k='a';
+   
+//    cout<<freq(str, k);
+
+//     return 0;
+// }
