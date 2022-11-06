@@ -4,9 +4,9 @@
 using namespace std;
 int main() {
     string str="hello prince";
-    int count=0;
+
     for(int i=0; i<str.length(); i++){
-        count=0;
+    int count=0;
         for(int j=0; j<str.length(); j++){
             
             if(j<i && str[i]==str[j]){
