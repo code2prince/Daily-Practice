@@ -5,10 +5,10 @@ using namespace std;
 
 struct node{
     int data;
-    node * next;
+    node *next;
 };
 
-void printList(node * n){
+void printList(node *n){
     while(n!=NULL){
         cout<< n->data<<endl;
         n= n->next;
@@ -16,9 +16,9 @@ void printList(node * n){
 }
 
 int main(){
-    node * head= new node();
-    node * second= new node();
-    node * third= new node();
+    node *head= new node();
+    node *second= new node();
+    node *third= new node();
 
     head->data=5;
     head->next=second;
