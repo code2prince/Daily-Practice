@@ -1,5 +1,5 @@
 // Fascinating no
-// 192 >> 192*2 + 192*3 + (192*2+192*3)= 192384576  all are present (1-9)
+// 192 >>192 + 192*2 + 192*3 >> ("192 + 192*2 + 192*3 ")= 192384576  all are present (1-9)
 
 #include<bits/stdc++.h>
 using namespace std;
