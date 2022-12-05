@@ -38,3 +38,22 @@ long long int modify (long long int N)
     return ans;
 }
 */
+
+
+#include<iostream>
+using namespace std;
+int main(){
+    int n=1223;
+    int ans=0;
+    string str=to_string(n);
+    for(int i=0; i<str.length(); i++){
+        if(str[i]==str[i+1]){
+            continue;
+        }else{
+            ans=ans*10+str[i]-'0';
+        }
+    }
+    cout<<"ans:" <<ans;
+}
+
+// ans:123
