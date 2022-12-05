@@ -40,3 +40,17 @@
     
 // };
    
+
+    //2nd approach 3 pointer 
+     /* 
+       Node * prev=NULL;
+        Node* forward=NULL;
+        Node* curr=head;
+        while(curr!=NULL){
+            forward=curr->next;
+            curr->next=prev;
+            prev=curr;
+            curr=forward;
+        }
+        return prev;
+        */
