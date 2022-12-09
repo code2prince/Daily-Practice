@@ -1,6 +1,4 @@
 // check the sum of num and its rev is palindrom of not 
-
-
 // Example 1:
 
 // Input: n = 23
