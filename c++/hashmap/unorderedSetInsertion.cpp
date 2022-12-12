@@ -73,3 +73,67 @@ cout<<endl;
 
     return 0;
 }
+
+
+
+
+
+
+
+
+
+
+
+/// for string 
+
+
+/*
+
+
+#include <bits/stdc++.h>
+#include<unordered_set>
+using namespace std;
+int main() {
+    unordered_set<string>s;
+    s.insert("aba");
+    s.insert("ab");
+    s.insert("cc");
+    
+    for(auto it=s.begin() ; it!=s.end(); it++){
+        cout<<(*it)<<" ";     // cc ab aba 
+    }
+    cout<<endl;
+    
+    cout<<"size: "<<s.size()<<endl;    // size: 3
+  
+    
+string key="ab";
+if(s.count(key)){
+    cout<<"present";    // present
+}else{
+    cout<<"not present";
+}
+cout<<endl;
+
+
+string keyy="cc";
+if(s.find(keyy)!=s.end()){
+    cout<<"present";    //present
+}else{
+    
+    cout<<"not present";
+}
+cout<<endl;
+
+string keyyy="aaa";
+if(s.find(keyyy)==s.end()){
+    cout<<"not present";       // not present
+}else{
+    cout<<"present";
+}
+    
+
+    return 0;
+}
+
+*/
