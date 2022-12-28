@@ -18,18 +18,22 @@ int main(){
     cout<<endl;
     vector<pair<int,int>>vPair={{1,2},{2,3},{4,3}};
     vector<pair<int,int>> :: iterator itr;
+
+    // 1st method
     for(itr=vPair.begin(); itr!=vPair.end(); itr++){
         cout<<(*itr).first<<" " << (*itr).second<<endl;
         // 1 2
         // 2 3
         // 4 3
     }
-    
-    // 2nd method 
+
+    // 2nd method (->)syntax   >>>(*it).first   and   (it->first)  both are same
     for(itr=vPair.begin(); itr!=vPair.end(); itr++){
         cout<< (itr->first )<<" " <<(itr->second) <<endl;
     }
-
+        // 1 2
+        // 2 3
+        // 4 3
 
     return 0;
 }
