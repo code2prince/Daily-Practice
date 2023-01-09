@@ -40,6 +40,13 @@ int main() {
     // if Its given in option like 
     cout<< 2[arr]<<endl;  // 11  >>> It will also print 2nd Index
 
+    /* working model
+    
+    arr[i] = *(arr+i);
+    i[arr]= *(i+arr);
+
+    */ 
+
     
     
 
