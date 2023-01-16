@@ -56,26 +56,65 @@ public:
             m[arr[i]]++;
         }
         return ans; 
+
+
+        ************************************
+        // Or  Easy way......
+        unordered_map<int,int>m;
+        int ans=0;
+        for(int i=0; i<n; i++){
+            int b= k-arr[i];
+            if(m[b]){
+                ans+=m[b];
+            }
+            m[arr[i]]++;
+        }
+        return ans;
     }
 };
 
 */
 
-#include<iostream>
-using namespace std;
-int main(){
-    int arr[]={1,5,1,7};   // unsorted array 
-    int k=6;
-    int n=sizeof(arr)/sizeof(arr[0]);
-    int count=0;
-    for(int i=0; i<n; i++){
-        for(int j=i+1; j<n; j++){
-            if(arr[i]+arr[j]==k){
-                count++;
-            }
-        }
-    }
-    cout<<"Total pairs count: "<<count;
-}
+// #include<iostream>
+// using namespace std;
+// int main(){
+//     int arr[]={1,5,1,7};   // unsorted array 
+//     int k=6;
+//     int n=sizeof(arr)/sizeof(arr[0]);
+//     int count=0;
+//     for(int i=0; i<n; i++){
+//         for(int j=i+1; j<n; j++){
+//             if(arr[i]+arr[j]==k){
+//                 count++;
+//             }
+//         }
+//     }
+//     cout<<"Total pairs count: "<<count;
+// }
+
+
 
 // Total pairs count: 2
+
+#include<iostream>
+#include<unordered_map>
+using namespace std;
+int main(){
+    int arr[]={1,1,1,1};
+    int n=sizeof(arr)/sizeof(arr[0]);
+    int target=2;
+
+    unordered_map<int,int>m;
+    int count=0;
+    for(int i=0; i<n; i++){
+        int b= target-arr[i];
+        if(m[b]){
+            count+=m[b];
+        }
+        m[arr[i]]++;
+    }
+    cout<<" total count: "<<count;
+    
+}
+
+//  total count: 6
