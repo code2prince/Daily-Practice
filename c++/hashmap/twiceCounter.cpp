@@ -33,7 +33,7 @@ class Solution
     public:
         int countWords(string list[], int n)
         {
-           //code here.
+           //code here................
            int count=0;
            unordered_map<string,int>m;
            for(int i=0; i<n; i++){
@@ -51,3 +51,16 @@ class Solution
 
 
 */
+
+// #include<bits/stdc++.h>
+// #include<unordered_map>
+// using namespace std;
+// int main(){
+//      char colour[6][10]= { "Blue", "Red", "Orange", "Yellow" ,"Red", "Blue"};
+//      int count=0;
+//      unordered_map<char,int>m;
+//      for(int i=0; i<6; i++){
+//         m[colour[i]]++;
+//      }
+
+// }
