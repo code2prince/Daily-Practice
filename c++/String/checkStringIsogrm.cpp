@@ -43,6 +43,19 @@ class Solution
         //     return false;
         // }
         // return true;
+
+
+//**********************************************
+         unordered_map<char,int>m;
+        for(int i; i<s.length(); i++){
+            m[s[i]]++;
+        }
+        for(auto it=m.begin(); it!=m.end(); it++){
+            if(it->second >1)
+            return 0;
+        }
+        return 1;
+//****************************************************************
         
 
         // 2nd approach ************
