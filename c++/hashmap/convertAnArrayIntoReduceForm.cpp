@@ -56,3 +56,28 @@ public:
 
 };
 */
+
+
+#include<iostream>
+#include<map>
+using namespace std;
+int main(){
+    int arr[3]={10,40,20};
+    int n=3;
+
+    map<int,int>m;
+    for(int i=0; i<n; i++){
+        m[arr[i]]++;
+    }
+
+    int c=0;
+    for(auto itr=m.begin(); itr!=m.end(); itr++){
+        arr[itr->second]=c++;
+        
+    }
+
+    // for(int i=0; i<n; i++){
+    //     cout<<arr[i]<<" ";
+    // }
+    return 0;
+}
