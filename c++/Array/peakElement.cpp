@@ -27,7 +27,7 @@ Explanation: Highest element is 5.
 
 */
 
-#include<iostream>
+#include<bits/stdc++.h>
 using namespace std;
 int main(){
     int arr[]={1,2,3,4,5,6,8,2,1};
@@ -38,5 +38,18 @@ int main(){
         maxi=max(maxi,arr[i]);
     }
     cout<<" peak element: "<<maxi;
+
+
+
+
+    // 2nd Approach sort them maximum will be at last index
+
+    // sort(arr.begin(), arr.end());
+    // cout<<arr[n-1];
+
+
+
+
+
 
 }
