@@ -7,8 +7,8 @@ int main(){
     int arr[]={2,1,4,6,0};
     int n=sizeof(arr)/sizeof(arr[0]);
 
-    for(int i=0; i<n; i++){
-        for(int j=0; j<n; j++){
+    for(int i=0; i<n-1; i++){       // i<n me  test cases fail hota hai so, i<n-1;
+        for(int j=0; j<n-i-1; j++){   //j<n me  test cases fail hota hai so, j<n-i-1;
             if(arr[j]>arr[j+1]){
                 //swap
                 temp= arr[j];
@@ -41,8 +41,8 @@ int main(){
 // using namespace std;
 
 // int bubbleSort(int arr[], int n){
-//      for(int i=0; i<n; i++){
-//         for(int j=0; j<n; j++){
+//      for(int i=0; i<n-1; i++){
+//         for(int j=0; j<n-i-1; j++){
 //             if(arr[j]>arr[j+1]){
 //                 int temp=arr[j+1];
 //                 arr[j+1]=arr[j];
