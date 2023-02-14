@@ -42,3 +42,63 @@ Prince
 Prince
 Prince
 */
+
+
+
+//print 1 to N linearly
+
+/*
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+
+#include<iostream>
+using namespace std;
+void print(int i, int n){
+// Base case
+    if(i>n)
+     return;
+     
+    cout<<i<<endl;
+    print(i+1,n);
+};
+int main(){
+    int n;
+    cout<<"ENter n: ";
+    cin>>n;
+    int i=1;
+    print(i,n);
+}
+
+
+ENter n: 5
+1
+2
+3
+4
+5
+
+
+
+// #include <iostream>
+// using namespace std;
+// int count=1;
+// int  counter(int n){
+    
+//     if(count==n+1){
+//         return n;
+//     }
+//     cout<<count<<endl;
+//     count++;
+//     counter(n);
+// }
+// int main() {
+
+//     int n;
+//     cout<<"ENter: ";
+//     cin>>n;
+// counter(n);
+//     return 0;
+// }
+
+
+*/
