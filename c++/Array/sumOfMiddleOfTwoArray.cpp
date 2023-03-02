@@ -56,3 +56,40 @@ int main(){
 }
 
 // mid sum:11
+
+// or 
+
+/*
+
+#include <bits/stdc++.h>
+using namespace std;
+int merge(int arr1[], int arr2[], int n1, int n2, int arr[], int n){
+    int i=0, j=0, k=0;
+    
+    while(i<n1){
+        arr[k++]=arr1[i++];
+    }
+    while(j<n2){
+        arr[k++]=arr2[j++];
+    }
+   sort(arr, arr+n);
+   int mid=n/2;
+   for(int i=0; i<n; i++){
+       cout<<"mid: "<<arr[mid]+arr[mid+1]<<endl;
+       break;
+       
+   }
+}
+int main() {
+    int arr1[]={4,5,3,1};
+    int arr2[]={8,9,8,6,9};
+    int n1=4;
+    int n2=5;
+    
+    int n=n1+n2;
+    int arr[n];
+    merge(arr1, arr2, n1, n2, arr, n);
+    return 0;
+}
+
+*/
