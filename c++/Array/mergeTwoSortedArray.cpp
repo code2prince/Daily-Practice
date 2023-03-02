@@ -89,3 +89,34 @@ return 0;
 
 // arr1 : 1 2 3 4 
 // arr2 : 4 5 7 9 
+
+
+// we can also use vector and push all elements into it;
+
+
+// #include<bits/stdc++.h>
+// using namespace std;
+// int merge(int arr1[], int arr2[], int n1, int n2){
+//     vector<int>v;
+//     for(int i=0; i<n1; i++){
+//         v.push_back(arr1[i]);
+//     }
+
+//     for(int j=0; j<n2; j++){
+//         v.push_back(arr2[j]);
+//     }
+
+//     sort(v.begin(), v.end());
+//     for(int i=0; i<v.size(); i++){
+//         cout<<v[i]<<" ";   // 2 3 4 4 5 5 6 7 8 9 
+//     }
+// }
+// int main(){
+//     int arr1[]={2,3,4,5};
+//     int arr2[]={4,5,6,7,8,9};
+//     int n1=4;
+//     int n2=6;
+
+//     merge(arr1, arr2, n1,n2);
+
+// }
