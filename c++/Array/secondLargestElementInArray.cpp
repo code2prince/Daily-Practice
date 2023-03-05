@@ -19,6 +19,10 @@ int main(){
 
     */
 
+  
+  /*
+  //2nd method >> better approach ****************
+
    int largest=arr[0];
    for(int i=0; i<n; i++){
     if(arr[i]> largest){
@@ -34,5 +38,21 @@ int main(){
     }
    }
    cout<<"second largest: " <<secLargest<<endl;   // second largest: 8
+
+*/
+
+//3rd method >> optimal approach ********************
+int largest=arr[0];
+int secLargest=-1;
+
+for(int i=0; i<n; i++){
+    if(arr[i] > largest ){
+        secLargest=largest;
+        largest=arr[i];
+    }else if(arr[i] < largest && arr[i]> secLargest){
+        secLargest=arr[i];
+    }
+}
+cout<<"secLargest: "<<secLargest;  //secLargest: 8
 
 }
