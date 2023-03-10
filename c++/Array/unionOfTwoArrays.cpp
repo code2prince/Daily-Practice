@@ -31,25 +31,47 @@ Explanation:
 union set of both arrays. So count is 7.
 */
 
-#include<bits/stdc++.h>
-using namespace std;
-int main(){
-    int arr1[4]={1,2,4,5};
-    int arr2[3]={1,3,5};
-    int n1=4,n2=3;
+// #include<bits/stdc++.h>
+// using namespace std;
+// int main(){
+//     int arr1[4]={1,2,4,5};
+//     int arr2[3]={1,3,5};
+//     int n1=4,n2=3;
 
-    set<int>s;
-    for(int i=0; i<n1; i++){
-        s.insert(arr1[i]);
-    }
-    for(int i=0; i<n2; i++){
-        s.insert(arr2[i]);
-    }
-    cout<<s.size()<<endl;   //5 
+//     set<int>s;
+//     for(int i=0; i<n1; i++){
+//         s.insert(arr1[i]);
+//     }
+//     for(int i=0; i<n2; i++){
+//         s.insert(arr2[i]);
+//     }
+//     cout<<s.size()<<endl;   //5 
 
     
-    for(auto it=s.begin(); it!=s.end(); it++){
-        cout<<*it<<" ";   // 1 2 3 4 5 
+//     for(auto it=s.begin(); it!=s.end(); it++){
+//         cout<<*it<<" ";   // 1 2 3 4 5 
+//     }
+//     return 0;
+// }
+
+
+#include <bits/stdc++.h>
+using namespace std;
+int main() {
+    int arr1[]={1,2,3,4,5};
+    int arr2[]={1,3,4,5,6,7};
+    int n1=5;
+    int n2=6;
+    map<int,int>m;
+    for(int i=0; i<n1; i++){
+        m[arr1[i]]++;
     }
+    for(int i=0; i<n2; i++){
+        m[arr2[i]]++;
+    }
+    for(auto itr=m.begin(); itr!=m.end(); itr++){
+        cout<<itr->first<<" ";   // 1 2 3 4 5 6 7
+    }
+
     return 0;
-}
+}  
