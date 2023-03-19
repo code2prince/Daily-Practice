@@ -15,6 +15,20 @@ int peak(int arr[], int size){
         }
     }
     return s;
+
+    // // 2nd approach
+
+    // int index=0;
+    // for(int i=0; i<size; i++){
+    //     if(arr[i]<arr[i+1]){
+    //         index=i+1;
+    //     }
+    // }
+    // return index;
+
+    // 3d approach sort them and find the index of maximum among the array 
+
+
 }
 int main(){
     int arr[7]={1,3,4,5,9,4,1};
