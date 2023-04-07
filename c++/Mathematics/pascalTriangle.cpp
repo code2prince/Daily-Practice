@@ -26,6 +26,8 @@
    ***************************************
  */
 
+
+/*
 #include<iostream>
 using namespace std;
 int main(){
@@ -38,4 +40,34 @@ int main(){
     }
     cout<<"element is: "<<ans;
 }
+
+*/
+
 // element is: 6 
+
+
+// Q.2> print the entire row ;
+
+/*
+Eg. row=5   >>>  1   4    6     4    1
+or 
+
+ row=6    >>>  1   5    10   10    5   1
+*/
+
+#include<iostream>
+using namespace std;
+int main(){
+    int row=5;
+    int result=1;
+    cout<<result<<" ";  // 1
+    
+    for(int i=1; i<row; i++){
+        result=result*(row-i);
+        result=result / i;
+
+        cout<<result<<" ";  // 4 6 4 1 
+    }
+}
+
+//1 4 6 4 1 
