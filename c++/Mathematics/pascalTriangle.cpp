@@ -61,7 +61,7 @@ int main(){
     int row=5;
     int result=1;
     cout<<result<<" ";  // 1
-    
+
     for(int i=1; i<row; i++){
         result=result*(row-i);
         result=result / i;
@@ -71,3 +71,44 @@ int main(){
 }
 
 //1 4 6 4 1 
+
+
+// print the entire triangle
+
+/*
+class Solution {
+public:
+vector<int>pascal(int row){
+    vector<int>v;
+    long long result=1;
+    v.push_back(1);
+    for(int i=1; i<row; i++){
+        result=result*(row-i);
+        result=result/i;
+        v.push_back(result);
+    }
+    return v;
+    }
+
+
+    vector<vector<int>> generate(int numRows) {
+       vector<vector<int>>ans;
+       for(int i=1; i<=numRows; i++){
+           ans.push_back(pascal(i));
+       }
+       return ans;
+    }
+};
+*/
+
+
+/*
+               1
+            1     1
+          1   2    1
+        1    3    3    1
+      1   4    6     4    1
+    1   5    10   10    5   1
+  1   6    15   20    15   6   1
+
+  */
