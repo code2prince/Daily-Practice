@@ -47,9 +47,9 @@ int main(){
         i++;
         j--;
         }else if( sum > k){
-            i++;
-        }else{
             j--;
+        }else{
+           i++;
         } 
     }
     if(count==0)
