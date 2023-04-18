@@ -17,7 +17,7 @@ class Dog{
         cout<<"Barking";
     }
 };
-
+/*
 int main(){
     Dog obj;
     obj.speak();
@@ -25,3 +25,11 @@ int main(){
 }
 
 // Barking
+*/
+
+int main(){
+    Animal obj;
+    obj.speak();
+}
+
+// Speaking
