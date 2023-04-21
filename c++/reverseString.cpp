@@ -1,3 +1,23 @@
+#include<iostream>
+using namespace std;
+void rev(string &str){
+    int n=str.length();
+    for(int i=0; i<n/2; i++){
+        swap(str[i], str[n-i-1]);
+    }
+}
+int main(){
+    string str="Prince";
+    rev(str);
+    cout<<"After reverse: "<<str;
+}
+
+// After reverse: ecnirP
+
+
+
+
+
 // #include<iostream>
 // using namespace std;
 // int main(){
@@ -12,15 +32,17 @@
 // }
 
 // or 
-#include<iostream>
-using namespace std;
-int main(){
-    string str=" Prince";
-    for(int i=str.length()-1; i>=0; i--){
-        cout<<str[i];
-    }
-    return 0;
-}
+
+
+// #include<iostream>
+// using namespace std;
+// int main(){
+//     string str=" Prince";
+//     for(int i=str.length()-1; i>=0; i--){
+//         cout<<str[i];
+//     }
+//     return 0;
+// }
 
 
 
@@ -30,7 +52,7 @@ int main(){
 
 
 
-// recursion 
+
 
 
 // #include <iostream>
