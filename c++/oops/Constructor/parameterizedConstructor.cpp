@@ -10,7 +10,7 @@ class Hero{
     public:
     char level;
 
-        // constructor   
+        //normal  constructor   
         Hero(){
         cout<<"Constructor called"<<endl;
         }
@@ -27,7 +27,8 @@ class Hero{
         }
 
         void print(){
-            cout<<level<<endl;  // C
+            cout<<"level is: "<<level<<endl;  // level is: C
+            cout<<"health is: "<<health<<endl; // health is: 20
         }
 
         int getHealth(){
