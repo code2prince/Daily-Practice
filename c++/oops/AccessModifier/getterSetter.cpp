@@ -36,7 +36,7 @@ class Hero{
 };
 int main(){
     // Static object creation
-    Hero h1;
+    Hero h1;   // >> when we create an object then **Contructor** called..
 
      //////static
 
