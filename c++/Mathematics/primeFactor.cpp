@@ -61,3 +61,24 @@ enter n: 35
 enter n: 100
 2 5 
 */
+
+
+/*
+// optimal Approach 
+
+class Solution{
+	public:
+	vector<int>AllPrimeFactors(int N) {
+	    set<int>s;   /// >>using set because it contains duplicates values so SET will remove them
+	    for(int i=2; i<=N; i++){
+	        while(N%i==0){
+	            s.insert(i);
+	            N=N/i;
+	        }
+	    }
+	    vector<int>v(s.begin(),s.end());
+	    return v;
+	}
+};
+
+*/
