@@ -48,6 +48,38 @@ return 0;
 
 // merge two sorted array without using extra space  >>>*******
 
+
+ /*
+ 
+ class Solution{
+    public:
+        void merge(long long arr1[], long long arr2[], int n, int m) 
+        { 
+            int left=n-1;
+            int right=0;
+            while(left>=0 && right<m){
+                if(arr1[left] > arr2[right]){
+                    swap(arr1[left--],arr2[right++]);
+                }else{
+                    break;
+                }
+            }
+            // Sort first array
+            sort(arr1, arr1 + n);
+           
+            // Sort second array
+            sort(arr2, arr2 + m);
+        } 
+};*/
+
+
+
+
+
+
+
+
+
 // #include <bits/stdc++.h>
 // using namespace std;
 
@@ -70,7 +102,7 @@ return 0;
 //     int arr1[4]={1,4,7,9};
 //     int n1=4;
     
-//     int arr2[5]={2,3,4,5,6};
+//     int arr2[5]={2,3,4,5};
 //     int n2=5;
     
 //     merge(arr1, arr2, n1, n2);
@@ -80,7 +112,7 @@ return 0;
 //     }
 //     cout<<endl;
 //     cout<<"arr2 : ";
-//     for(int i=0; i<n1; i++){
+//     for(int i=0; i<n2; i++){
 //         cout<<arr2[i]<<" ";
 //     }
 
