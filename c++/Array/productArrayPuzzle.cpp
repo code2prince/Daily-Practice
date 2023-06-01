@@ -48,3 +48,26 @@ Output:
     }
 };
 */
+
+#include<bits/stdc++.h>
+
+using namespace std;
+int main(){
+    int arr[]={10,3,5,6,2};
+    int n=5;
+
+    vector<int>v;
+    for(int i=0; i<n; i++){
+        int product=1;
+        for(int j=0; j<n; j++){
+            if(i!=j){
+                product=product*arr[j];
+            } 
+        }
+        v.push_back(product);
+    }
+    for(int i=0; i<v.size(); i++){
+        cout<<v[i]<<" ";   /// 180 600 360 300 900 
+    }
+
+}
