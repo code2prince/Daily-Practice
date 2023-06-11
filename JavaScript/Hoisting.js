@@ -11,14 +11,27 @@
 
 
 
-// it will also work 
+// it will also work  
 
 name();
 function name(){
     console.log("Hello prince");  // Hello prince
 }
 
+//Note=>  But if we write function as a Arrow Function then It wll not work  here name2 behaves like a variable so it will not work
 
+name2();
+const name2=()=>{
+    console.log("hello arrow function");  // Error
+}
+
+
+
+
+// const name2=()=>{
+//     console.log("hello arrow function");  // hello arrow function
+// }
+// name2();
 
 console.log(a);  // undefined
 var a=5; 
