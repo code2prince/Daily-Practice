@@ -52,3 +52,33 @@ class Solution{
     }
 };
 */
+
+
+#include<iostream>
+using namespace std;
+int main(){
+    int arr[]={1, 9, 2, 8, 6, 4, 3};
+    int n=sizeof(arr)/sizeof(arr[0]);
+    int k=100;
+
+    int cnt=0;
+    int mult=1;
+    for(int i=0; i<n; i++){
+        if(arr[i]<k){
+            cnt++;
+        }
+        mult=arr[i];
+
+        for(int j=i+1; j<n; j++){
+            mult*=arr[j];
+            if(mult < k){
+                cnt++;
+            }else{
+                break;
+            }
+        }
+    }
+    cout<<"total count : "<<cnt;
+}
+
+// total count : 16
