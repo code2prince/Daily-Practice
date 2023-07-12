@@ -81,3 +81,52 @@ class Solution
     }
 };
 */
+
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+	int n = 3, m = 3, k = 4;
+   int a[n][m] ={{1 ,2 ,3},
+   				{4 ,5 ,6},
+				{7, 8 ,9}};
+
+	int left=0, right=m-1, top=0, bottom=n-1;
+ 		int cnt=0;
+ 		while(top<=bottom && left<=right){
+ 		    for(int i=left; i<=right; i++){
+ 		        cnt++;
+ 		        if(cnt==k){
+ 		            cout<< a[top][i];
+ 		        }
+ 		    }
+ 		    top++;
+ 		    for(int i=top; i<=bottom; i++){
+ 		        cnt++;
+ 		        if(cnt==k){
+ 		            cout<< a[i][right];
+ 		        }
+ 		    }
+ 		    right--;
+ 		    if(top<=bottom){
+ 		        for(int i=right; i>=left; i--){
+ 		            cnt++;
+ 		            if(cnt==k){
+ 		                cout<< a[bottom][i];
+ 		            }
+ 		        }
+ 		        bottom--;
+ 		    }
+ 		    if(left<=right){
+ 		        for(int i=bottom; i>=top; i--){
+ 		            cnt++;
+ 		            if(cnt==k){
+ 		                cout<< a[i][left];
+ 		            }
+ 		        }
+ 		        left++;
+ 		    }
+ 		}
+ 		return 0;
+}
+
+// output : 6
