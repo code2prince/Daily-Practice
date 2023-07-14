@@ -73,3 +73,25 @@ class Solution
     }
 };
 */
+
+#include<bits/stdc++.h>
+using namespace std;
+
+    int main(){
+    int arr[] = {2, 2, 5, 10, 1, 2, 10, 5, 10, 2};
+    int n=10;
+    map<int,int>m;
+    set<int>st;
+    for(int i=0; i<n; i++){
+        m[arr[i]]++;
+    }
+    for(auto itr:m){
+        st.insert(itr.second);
+    }
+
+    if(st.size() == m.size()){
+        cout<<true;
+    }else{
+        cout<<false;
+    }
+}
