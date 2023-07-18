@@ -14,4 +14,3 @@ function reverseNumber(num){
 console.log(reverseNumber(-65654));
 console.log(reverseNumber(-65654.12000));
 console.log(reverseNumber(100000000000));
-
