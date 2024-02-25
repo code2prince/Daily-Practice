@@ -57,3 +57,24 @@ public:
     }
 };
 */
+
+#include <iostream>
+using namespace std;
+int unique(int arr[], int n){
+    if(n==0)
+    return 0;
+    int i=0;
+    for(int j=0; j<n; j++){
+        if(arr[j]!=arr[i]){
+            i++;
+            arr[i]=arr[j];
+        }
+    }
+    return i+1;
+}
+int main() {
+    int arr[]={1,3,3,5,5,7,7,9,9,10,20};
+    int n=sizeof(arr)/sizeof(arr[0]);
+    cout<< unique(arr,n);
+return 0;
+}
