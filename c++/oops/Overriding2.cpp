@@ -1,9 +1,9 @@
-//--------Mathod or Function Overriding----------------
+//--------Method or Function Overriding----------------
 
 #include<bits/stdc++.h>
 using namespace std;
 class Parent{
-    public:
+    public:   //private or protected then we cann't use ChildObj.Parent::display();
     void display(){
         cout<<"Parent or Base Display method"<<endl;
     }
