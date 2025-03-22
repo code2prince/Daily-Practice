@@ -44,7 +44,7 @@ bool isVowel(char c){
     }
 };
 */
-
+/* // Approach 1
 #include<bits/stdc++.h>
 using namespace std;
 bool isVowel(char c){
@@ -76,5 +76,63 @@ int main(){
             cout<<s[i];
         }
 }
-   
+   */
 
+
+   // 2nd Approach (two pointer)
+/*
+#include<iostream>
+   using namespace std;
+   bool isVowel(char c){
+    if(c=='a'|| c=='e'|| c=='i'|| c=='o'|| c=='u'){
+        return true;
+    }return false;
+   }
+   int main(){
+    string str="leetcode"; //leotcede
+    int n=str.length();
+    int s=0, e=n-1;
+    while(s<e){
+        while(s<e && !isVowel(str[s])){
+            s++;
+        }
+        while(s<e && !isVowel(str[e])){
+            e--;
+        }
+        if(s<e){
+            swap(str[s],str[e]);
+            s++;
+            e--;
+        }
+    }
+    cout<<str;
+   }
+   */
+
+   //3rd Approach (Take all vowels from given string and put into a vector and replace the given string with vector data from last of the vetor it will works)
+
+#include<bits/stdc++.h>
+using namespace std;
+bool isVowel(char c){
+    return(c=='a'|| c=='e'|| c=='i'|| c=='o'|| c=='u');
+}
+int main(){
+    string str="Leetcodi";  //Liotcede
+    int n=str.length();
+    vector<char>v;
+    for(int i=0; i<n; i++){
+        if(isVowel(str[i])){
+            v.push_back(str[i]);  //pushing all vowel from string to Vector
+        }
+    }
+
+    int vSize=v.size()-1;   //length of vector 
+
+    for(int i=0; i<n; i++){
+        if(isVowel(str[i])){
+            str[i]=v[vSize--];  // replacing vowel from string to vector last values
+        }
+    }
+    cout<<str;
+
+}
