@@ -5,22 +5,23 @@
 #include <bits/stdc++.h>
 using namespace std;
 int main() {
-   string s="Hello how are you";
-   cout<<s;
-   cout<<endl;
-   int n=s.size();
-   int l=0;
-   int r=0;
-   while(l<n){
-       while(r<n && s[r]!=' '){
-           r++;
-       }
-       reverse(s.begin()+l, s.begin()+r);
-       l=r+1;
-       r=l;
-   }
-   cout<<s;
+   string str="Hello how are you";
+   int n=str.length();
+   stack<string>st;
 
+   for(int i=0; i<n; i++){
+    string word="";
+    while(i<n && str[i]!=' '){
+        word+=str[i];
+        i++;
+    }
+    st.push(word);
+   }
+
+   while(!st.empty()){
+    cout<<st.top()<<" ";
+    st.pop();
+   }
 }
 // Hello how are you
-// olleH woh era uoy
+// you are how Hello 
